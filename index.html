@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <section class="scene">
+    <div class="sun"></div>
+    
+    
+    <script>
+        const sun=document.querySelector('.sun');
+        const body=document.querySelector("body");
+        sun.onclick=function(){
+            body.classList.toggle("dark")
+        }
+    </script>
+    <form id="search-form">
+        <input type="search" placeholder="Enter City Name" id="search-input" required 
+        autocomplete="off"/>
+        <br></br>
+        <button id="search-button">Search</button>
+    </form>
+    <main id="app-container">
+        <div id="location">
+            <p>-----</p>
+        </div>
+        <div id="temp">
+            <img id="temp-icon" src="./icons/cloudy.png" alt="">
+            <p> <span id="temp-value">----</span><span id="temp-unit">&#176c</span></p>
+        </div>
+        
+        <div id="climate">
+        <p>---</p>
+        </div>
+        
+    </main>
+    <div class="bg"></div>
+        <img src="./icons/police_car.gif" class="car1" >
+        <img src="./icons/police_car.gif" class="car2" >
+        </div>
+</section>
+<script src="script2.js"></script>
+</body>
+</html>
